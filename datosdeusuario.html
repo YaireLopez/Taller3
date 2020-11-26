@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>datos del usuario</title>
+</head>
+<body>
+	<form>
+		<h2>Rellena tu CV</h2>
+		<br>
+		<label for="nombre">Nombre :</label><br>
+		<input type="text" id="nombre"><br><br>
+		<label for="apellidos">Apellidos :</label><br>
+		<input type="text" id="apellidos"><br><br>
+		<label for="contraseña"> Contraseña:</label><br>
+		<input type="password" id="contraseña"><br><br>
+		<label for="contraseña"> Confirme Contraseña:</label><br>
+		<input type="password" id="contraseña"><br><br>
+		<span>Identificación</span><br>
+		<select id="select" name="select">
+			<option>RC</option>
+			<option>TI</option>
+			<option>CC</option>
+			<option>CE</option>
+			<option>PA</option>	
+		</select>
+		<input type="number" name="NumDocumento"><br><br>
+		<span>Sexo</span><br>
+		Hombre<input type="radio" id="hombre" name="sexo"><br>
+		Mujer<input type="radio" id="mujer" name="sexo"><br><br>
+		<span>Incluir mi foto</span><br>
+		<input type="file" id="file" name="file"><br><br>
+		<span>Estudiante...</span>
+		<input type="checkbox" id="checkbox" name="checkbox"><br><br>
+
+		<form>
+			<fieldset>
+				<legend>Datos personales</legend>
+				<span>Departamento</span><br>
+				<select id="select" name="select">
+					<option>Amazonas</option>
+					<option>Antioquia</option>
+					<option>Arauca</option>
+					<option>Atlántico</option>
+					<option>Bolívar</option>
+					<option>Boyacá</option>	
+					<option>Caldas</option>
+					<option>Caquetá</option>
+					<option>Casanare</option>
+					<option>Cauca</option>
+					<option>Cesar</option>
+					<option>Chocó</option>
+					<option>Córdoba</option>
+					<option>Cundinamarca</option>
+					<option>Guanía</option>
+					<option>Guaviare</option>
+					<option>Huila</option>
+					<option>La Guajira</option>
+					<option>Magdalena</option>
+					<option>Meta</option>
+					<option>Nariño</option>
+					<option>Norte de Santander</option>
+					<option>Putumayo</option>
+					<option>Quindío</option>
+					<option>Risaralda</option>
+					<option>San Andrés y Providencia</option>
+					<option>Santander</option>
+					<option>Sucre</option>
+					<option>Tolima</option>
+					<option>Valle del Cauca</option>
+					<option>Vaupés</option>
+					<option>Vichada</option>
+				</select><br>
+				<span>Fecha de Nacimiento</span><br>
+				<input type="number" name="dia">
+				<span>de</span>
+				<select id="select" name="select">
+					<option>Enero</option>
+					<option>Febrero</option>
+					<option>Marzo</option>
+					<option>Abril</option>
+					<option>Mayo</option>
+					<option>Junio</option>	
+					<option>Julio</option>
+					<option>Agosto</option>
+					<option>Septiembre</option>
+					<option>Octubre</option>
+					<option>Noviembre</option>
+					<option>Diciembre</option>
+				</select>
+				<span>de</span>
+				<input type="number" id="año" name="año"><br><br>
+				<span>Temas de Interés</span>
+				<input list="Temas">
+				<datalist id="Temas">
+					<option value="Administración de bases de datos">
+					<option value="Análisis y programación">
+					<option value="Arquitectura">
+					<option value="Calidad">
+					<option value="ERP, CMR, Business Intelligence">	
+				</datalist><br><br>
+			</fieldset>
+			<input type="submit" value="Guardar cambios">
+			<input type="reset" value="Borrar los datos introducidos">
+		</form>
+	</form>
+</body>
+</html>
